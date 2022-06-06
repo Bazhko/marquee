@@ -1,5 +1,5 @@
 .marquee {
-    background: #ededed;
+    background: linear-gradient(180deg, rgba(214,214,214,1) 0%, rgba(233,233,233,1) 25%, rgba(240,239,239,1) 50%, rgba(233,233,233,1) 75%, rgba(214,214,214,1) 100%);
     border-radius: 0 0 5px 5px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -32,6 +32,7 @@
     flex-direction: row;
     align-items: center;
     animation: scroll 25s infinite linear;
+    text-size-adjust: 100%;
 }
 
 .marquee__list {
@@ -51,8 +52,10 @@
 .marquee__link {
     display: flex;
     flex-direction: row;
-    margin: 0 10px;
-    color: cadetblue;
+    margin: 0 15px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -63,6 +66,11 @@
 
 .marquee__market {
     margin-right: 5px;
+    color: #F0C13E;
+}
+
+.marquee__value {
+    color: #615D5D;
 }
 
 @keyframes scroll {
